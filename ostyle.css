@@ -12,7 +12,9 @@ html,body{
    width:100%;
   background-color:rgb(255, 255, 255);
 }
-
+body::-webkit-scrollbar{
+display:none;
+}
 
 .page1{
   position: relative;
@@ -472,9 +474,9 @@ left: 10%;
    align-items:center;
    justify-content:center;
    position:relative;
-  
    cursor:pointer;
    z-index:20;
+   margin-top:-13%;
 
 }
 .text{
@@ -489,8 +491,10 @@ left: 10%;
     align-items: center;
    justify-content: space-between;
     position:relative;
+    
     left: 0%;
-    margin:-304px auto;
+    margin:-200px auto;
+  
  
 
 
@@ -578,14 +582,12 @@ left: 10%;
     background-color:rgb(0, 0, 0);
     z-index: 25;
     top:0%;
-   left:100%;
- display:flex;
- align-items:center;
- justify-content:flex-start;
- flex-direction:column;
-
+    left:100%;
+display:flex;
+align-items:center;
+justify-content:flex-start;
+flex-direction:column;
 border-radius:50%;
-
 }
 .menuBar .DISPLAY{
  overflow:hidden;
@@ -628,6 +630,7 @@ border-radius:50%;
 .column a{
     z-index:100;
 }
+/*  resposive design is here */
 @media screen and (max-width:300px) {
   
     .content1 h2{
@@ -697,6 +700,7 @@ border-radius:50%;
     .cursor{
         height:5vw;
         width:5vw;
+        
     }
     .circle {
         height: 11vw;
@@ -721,4 +725,54 @@ border-radius:50%;
    .column a{
  z-index:100;
    }
+}
+@media  screen and (max-width:875px) {
+    .menuBar{
+        width:175px;
+    }
+}
+@media  screen and (max-width:638px) {
+    .navigationBar{
+        margin:0px 45px;
+    }
+    .circle {
+        height: 4vw;
+        width: 4vw;
+    }
+    .section1 {
+        height: 63px;
+    }
+    .circle {
+        margin: 0px -10px;
+        height: 4vw;
+        width: 4vw;
+    }
+    .page4 {
+        z-index: 11;
+        margin: -381px 31px;
+    }
+}
+
+.social{
+    width:100%;
+   position:absolute;
+   display:flex;
+   align-items:center;
+   justify-content:space-between;
+
+   top: 100%;
+   z-index:50
+}
+
+.social div a{
+color:white;
+font-weight:500;
+text-transform:capitalize;
+
+}
+.social div:nth-child(1){
+    width:20%;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
 }

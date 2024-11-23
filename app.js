@@ -48,8 +48,8 @@ function textAnimation(){
         duration:1,
         opacity:0,
         stagger:0.8,
-       
     })
+    // here the webites which I hosted on socially hited fightrer 
     setTimeout(wrapper,2700)
 }
 
@@ -200,6 +200,7 @@ gsap.to(hover,{
     ease:Power4.easeOut
     
 })
+// Hover Effect and Magnet effect; hi//
 gsap.to(text,{
     duration:1,
     x:newX * textStrenght,
@@ -228,7 +229,6 @@ hover.addEventListener('mousemove',activat)
 hover.addEventListener('mouseleave',reset)
 }
 hoverme()
-
 function projects(){
   var projects = document.querySelector('.projects')
   projects.addEventListener('mousemove',function(elem){
@@ -237,19 +237,14 @@ function projects(){
     scale:1,
     x:elem.x-(700),
     y:elem.y-(300),
-   
-
    })
   
   })
   projects.addEventListener('mouseleave',function(elem){
     let cursor = document.querySelector('.cursor')
    gsap.to(cursor,{
-   
     scale:0,
     duration:0.5,
-  
-
    })
    
   })
@@ -281,10 +276,8 @@ gsap.to(ball,{
     duration:1,
     x:newX * hoverStrenth,
     y:newY * hoverStrenth,
-    ease:Power4.easeOut
-    
+    ease:Power4.easeOut,    
 })
-
 }
 const reset = (event)=>{
     gsap.to(ball,{
